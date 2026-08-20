@@ -27,8 +27,8 @@ Rather than assuming a fully assembled product model or a pre-defined mating seq
 ## Project Highlights
 
 - **Geometry-first assembly reasoning** from individual CAD/mesh parts.
-- **Connector-aware planning** for inferring physically meaningful part relationships.
-- **Assembly pose and motion generation** for insertion and fastening-style operations.
+- **Connector-aware planning** for assembly reasoning from part geometry.
+- **Assembly pose and motion generation** for representative mating operations.
 - **Sequence-level validation** before physical execution.
 - **NVIDIA Isaac Sim** for assembly-sequence and mating-motion simulation.
 - **Physical robot demonstrations** for validating transfer from planning and simulation to hardware.
@@ -75,7 +75,7 @@ A representative hardware demonstration showing transfer of planned assembly mot
 
 ## Research Direction
 
-The broader goal is to reduce the amount of product-specific structure that must be supplied in advance for robotic assembly. The project investigates how geometric information available at the part level can be composed into assembly hypotheses and then connected to simulation and physical execution.
+The broader goal is to reduce the amount of product-specific structure that must be supplied in advance for robotic assembly. The project investigates how part-level geometric information can support assembly planning, simulation validation, and physical robot execution.
 
 ## Repository Contents
 
