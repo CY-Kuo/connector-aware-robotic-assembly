@@ -6,16 +6,25 @@ A geometry-aware robotic assembly framework that reasons from **individual CAD/m
 
 ## System Overview
 
-```mermaid
-flowchart LR
-    A[Individual CAD / Mesh Parts] --> B[Connector-Aware Assembly Reasoning]
-    B --> C[Assembly Planning]
-    C --> D[Pose & Motion Generation]
-    D --> E[Isaac Sim Validation]
-    E --> F[Physical Robot Execution]
+The project connects part-level geometry to executable robotic assembly through the following high-level workflow:
+
+```text
+Individual CAD / Mesh Parts
+            ↓
+Connector-Aware Assembly Reasoning
+            ↓
+Assembly Planning
+            ↓
+Pose & Motion Generation
+            ↓
+Isaac Sim Validation
+            ↓
+Physical Robot Execution
 ```
 
-The system is designed to bridge the gap between isolated part geometry and executable robotic assembly. Rather than assuming a fully assembled product model or pre-defined mating sequence, the workflow builds an assembly plan from available part geometry, generates candidate assembly poses and motions, checks the resulting sequence in simulation, and uses the validated motion information for robot execution.
+Rather than assuming a fully assembled product model or a pre-defined mating sequence, the workflow builds an assembly plan from available part geometry, generates assembly poses and motions, checks the resulting sequence in simulation, and uses the validated motion information for robot execution.
+
+The public showcase intentionally does **not** disclose the unpublished internals of connector extraction, compatibility rules, configuration generation or ranking, pose construction, sequence search, numerical thresholds, or detailed experimental results.
 
 ## Project Highlights
 
@@ -45,26 +54,6 @@ Physical demonstrations show representative assembly motions executed on robot h
 Add public robot videos here after upload.
 Suggested location: media/robot/
 -->
-
-## System Scope
-
-The current showcase focuses on the end-to-end robotics workflow:
-
-```text
-Part Geometry
-    ↓
-Assembly Reasoning
-    ↓
-Assembly Planning
-    ↓
-Pose & Motion Generation
-    ↓
-Simulation Validation
-    ↓
-Robot Execution
-```
-
-The public repository intentionally does **not** disclose the unpublished internals of connector extraction, compatibility rules, configuration generation/ranking, pose construction, sequence search, numerical thresholds, or detailed experimental results.
 
 ## Technology
 
