@@ -1,6 +1,6 @@
 # Connector-Aware Robotic Assembly
 
-A geometry-aware robotic assembly framework that reasons from **individual CAD/mesh parts** to generate assembly plans, validate assembly motions in **NVIDIA Isaac Sim**, and transfer validated motions to a **physical robot system**.
+A geometry-aware robotic assembly framework that reasons from **individual CAD/mesh parts** to generate assembly plans, validate assembly sequences and motions in **NVIDIA Isaac Sim**, and transfer validated results to a **physical robot system**.
 
 > **Research status:** The associated manuscript is currently under review. This repository is intentionally maintained as a **project showcase**; implementation details, source code, decision rules, thresholds, and other unpublished methodological details are withheld until the work is appropriate for public release.
 
@@ -23,8 +23,6 @@ Physical Robot Execution
 ```
 
 Rather than assuming a fully assembled product model or a pre-defined mating sequence, the workflow builds an assembly plan from available part geometry, generates assembly poses and motions, checks the resulting sequence in simulation, and uses the validated motion information for robot execution.
-
-The public showcase intentionally does **not** disclose the unpublished internals of connector extraction, compatibility rules, configuration generation or ranking, pose construction, sequence search, numerical thresholds, or detailed experimental results.
 
 ## Project Highlights
 
