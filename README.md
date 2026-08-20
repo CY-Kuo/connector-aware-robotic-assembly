@@ -47,7 +47,7 @@ Representative sequence-level simulations for products from the Manual2Skill++ b
 
 | SUNDVIK | VASSKAR |
 | :---: | :---: |
-| <img src="sundvik_15sec.gif" width="100%"> | <img src="vasskar_6sec.gif" width="100%"> |
+| <img src="media/isaac_sim/sundvik_15sec.gif" width="100%"> | <img src="media/isaac_sim/vasskar_6sec.gif" width="100%"> |
 
 #### Mating Motion Simulation
 
@@ -55,14 +55,14 @@ Representative local assembly-motion simulations showing how planned mating oper
 
 | Desk | Round Table |
 | :---: | :---: |
-| <img src="desk_assembly_17sec.gif" width="100%"> | <img src="round_table_assembly_7sec.gif" width="100%"> |
+| <img src="media/isaac_sim/desk_assembly_17sec.gif" width="100%"> | <img src="media/isaac_sim/round_table_assembly_7sec.gif" width="100%"> |
 
 ### Physical Robot Execution
 
 A representative hardware demonstration showing transfer of planned assembly motion from the reasoning and simulation workflow to a physical robot system.
 
 <p align="center">
-  <img src="robot_implementation_6sec.gif" width="70%">
+  <img src="media/robot/robot_implementation_6sec.gif" width="70%">
 </p>
 
 ## Technology
